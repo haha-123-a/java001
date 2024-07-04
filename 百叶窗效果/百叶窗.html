@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			body{
+				overflow: hidden;
+			}
+			.shell{
+				height: 100vh;
+				display: flex;
+			}
+			.box{
+				flex: 1;
+				min-width: 0;
+				box-shadow: -20px 0 20px 5px rgba(255,255,255,0.7);
+				transition: flex 0.8s;
+				background-size: cover;
+				background-position: center;
+				display: grid;
+				place-items: center;
+				
+			}
+			.box:hover{
+				flex: 3;
+			}
+			.box:hover .text{
+				animation: appear 0.8s forwards 0.3s;
+			}
+			.img1{
+				background-image: url(/images/武汉1.jpg);	
+				
+			}
+			.img2{
+				background-image: url(/images/武汉1.jpg);	
+				
+			}
+			.img3{
+				background-image: url(/images/武汉1.jpg);	
+				
+			}
+			.img4{
+				background-image: url(/images/武汉1.jpg);	
+				
+			}
+			.text{
+				padding: 45px 75px;
+				opacity: 0;
+				color: rgb(255, 255, 255);
+				height: 380px;
+				width: 600px;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			header{
+				height: 73px;
+				font-size: 65px;
+				font-family: 华文宋体;
+				line-height: 65px;
+				font-weight: bold;
+				border-bottom: 2px solid white;
+			}
+			
+			.title{
+				display: inline-block;
+				height: 65px;
+				text-decoration: underline;
+				text-underline-offset: 10px;
+				text-decoration-thickness: 4px;
+			}
+			
+			.num{
+				margin-left: -18px;
+			}
+			
+			.text p{
+				margin: 30px 0;
+				font-size: 30px;
+			}
+			
+			@keyframes appear{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="shell">
+			<div class="box img1">
+				<div class="text">
+					<header>
+						<span class="title">NO.</span>
+						<span class="num">1</span>
+					</header>
+						<p>
+							你好
+						</p>
+				</div>
+			</div>
+			<div class="box img2">
+				<div class="text">
+					<header>
+						<span class="title">NO.</span>
+						<span class="num">1</span>
+					</header>
+						<p>
+							666
+						</p>
+				</div>
+			</div>	
+			<div class="box img3">
+				<div class="text">
+					<header>
+						<span class="title">NO.</span>
+						<span class="num">1</span>
+					</header>
+						<p>
+							666
+						</p>	
+				</div>
+			</div>
+			<div class="box img4">
+				<div class="text">
+					<header>
+						<span class="title">NO.</span>
+						<span class="num">1</span>
+					</header>
+						<p>
+							666
+						</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
